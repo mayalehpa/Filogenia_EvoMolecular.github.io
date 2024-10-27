@@ -1,0 +1,227 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Oct 17 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MayWindows (AVX2, FMA3, 3 GB RAM)
+Command: iqtree2 -s 16s.aln.fasta -m MF -redo -pre 16s_iqtree_modelfinder
+Seed:    614653 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Oct 22 11:52:10 2024
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file 16s.aln.fasta ... Fasta format detected
+Reading fasta file: done in 0.00351771 secs
+Alignment most likely contains DNA/RNA sequences
+Alignment has 44 sequences with 905 columns, 202 distinct patterns
+146 parsimony-informative, 16 singleton sites, 743 constant sites
+WARNING: Some sequence names are changed as follows:
+Pristimantis_aff_viejas_MHUAA8059_(reversed) -> Pristimantis_aff_viejas_MHUAA8059__reversed_
+
+                                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.4659e-05 secs
+   1  Pristimantis_viejas_MHUAA7119                  48.95%    passed     34.08%
+   2  Pristimantis_viejas_MHUAA10465                 11.60%    passed     88.53%
+   3  Pristimantis_viejas_MHUAA11900                 37.24%    passed     59.39%
+   4  Pristimantis_viejas_MHUAA11901                 37.13%    passed     58.14%
+   5  Pristimantis_viejas_MHUAA9742                  14.70%    passed     94.40%
+   6  Pristimantis_viejas_MHUAA10472                  6.08%    passed     98.61%
+   7  Pristimantis_viejas_MHUAA10509                  5.30%    passed     98.49%
+   8  Pristimantis_viejas_MHUAA10526                  5.64%    passed     98.92%
+   9  Pristimantis_viejas_MHUAA10558                  5.64%    passed     98.92%
+  10  Pristimantis_viejas_MHUAA10475                  4.86%    passed     99.07%
+  11  Pristimantis_aff_viejas_MHUAA5555               9.17%    passed     95.33%
+  12  Pristimantis_aff_viejas_MHUAA5562               8.07%    passed     97.00%
+  13  Pristimantis_aff_viejas_MHUAA8059__reversed_    4.64%    passed     99.75%
+  14  Pristimantis_aff_viejas_MHUAA8087               5.64%    passed     99.00%
+  15  Pristimantis_aff_viejas_MHUAA8088               6.52%    passed     97.54%
+  16  Pristimantis_aff_viejas_MHUAA8089               6.30%    passed     98.12%
+  17  Pristimantis_aff_viejas_MHUAA8099               7.62%    passed     94.30%
+  18  Pristimantis_aff_viejas_MHUAA8810              11.05%    passed     90.58%
+  19  Pristimantis_aff_viejas_MHUAA10473              4.42%    passed     98.76%
+  20  Pristimantis_aff_viejas_MHUAA10508              4.42%    passed     98.76%
+  21  Pristimantis_aff_viejas_MHUAA10514              4.42%    passed     98.76%
+  22  Pristimantis_aff_viejas_MHUAA10524              4.42%    passed     98.76%
+  23  Pristimantis_aff_viejas_MHUAA10477              4.53%    passed     98.41%
+  24  Pristimantis_aff_viejas_MHUAA10814              4.97%    passed     99.31%
+  25  Pristimantis_aff_viejas_MHUAA11731              3.65%    passed     99.02%
+  26  Pristimantis_aff_viejas_MHUAA11734              3.65%    passed     99.02%
+  27  Pristimantis_aff_viejas_MHUAA11737              3.65%    passed     99.02%
+  28  Pristimantis_aff_viejas_MHUAA11914              6.30%    passed     97.60%
+  29  Pristimantis_aff_viejas_MHUAA10489              8.18%    passed     99.69%
+  30  Pristimantis_aff_viejas_MHUAA11913              6.30%    passed     97.21%
+  31  Pristimantis_aff_viejas_MHUAA9428               6.41%    passed     96.41%
+  32  Pristimantis_factiosus_ARU784                   7.85%    passed     87.59%
+  33  Pristimantis_factiosus_MHUAA8075                7.96%    passed     99.81%
+  34  Pristimantis_factiosus_MHUAA8100                7.07%    passed     99.98%
+  35  Pristimantis_factiosus_MHUAA8808                7.51%    passed     99.96%
+  36  Pristimantis_factiosus_MHUAA8080                7.96%    passed     99.98%
+  37  Pristimantis_factiosus_MHUAA10366               6.19%    passed     98.67%
+  38  Pristimantis_factiosus_MHUAA10369               6.19%    passed     98.44%
+  39  Pristimantis_factiosus_MHUAA10367               6.19%    passed     98.67%
+  40  Pristimantis_factiosus_MHUAA10368               6.19%    passed     98.67%
+  41  Pristimantis_factiosus_MHUAA11730               4.64%    passed     87.88%
+  42  Pristimantis_factiosus_MHUAA11735               4.64%    passed     87.88%
+  43  Pristimantis_factiosus_MHUAA11915               7.73%    passed     87.44%
+  44  Pristimantis_factiosus_MHUAA11736               4.64%    passed     86.65%
+****  TOTAL                                           8.78%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Pristimantis_viejas_MHUAA10558 is identical to Pristimantis_viejas_MHUAA10526 but kept for subsequent analysis
+NOTE: Pristimantis_aff_viejas_MHUAA10508 is identical to Pristimantis_aff_viejas_MHUAA10473 but kept for subsequent analysis
+NOTE: Pristimantis_aff_viejas_MHUAA11734 is identical to Pristimantis_aff_viejas_MHUAA11731 but kept for subsequent analysis
+NOTE: Pristimantis_factiosus_MHUAA10368 is identical to Pristimantis_factiosus_MHUAA10367 but kept for subsequent analysis
+NOTE: Pristimantis_factiosus_MHUAA11735 is identical to Pristimantis_factiosus_MHUAA11730 but kept for subsequent analysis
+NOTE: 3 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Pristimantis_aff_viejas_MHUAA10514 (identical to Pristimantis_aff_viejas_MHUAA10473) is ignored but added at the end
+NOTE: Pristimantis_aff_viejas_MHUAA10524 (identical to Pristimantis_aff_viejas_MHUAA10473) is ignored but added at the end
+NOTE: Pristimantis_aff_viejas_MHUAA11737 (identical to Pristimantis_aff_viejas_MHUAA11731) is ignored but added at the end
+Alignment was printed to 16s_iqtree_modelfinder.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to 16s_iqtree_modelfinder.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -2327.802
+Optimal log-likelihood: -2327.339
+Rate parameters:  A-C: 0.95297  A-G: 2.69325  A-T: 0.73266  C-G: 0.00010  C-T: 5.79423  G-T: 1.00000
+Warning! Some parameters hit the boundaries
+Base frequencies:  A: 0.325  C: 0.266  G: 0.170  T: 0.239
+Proportion of invariable sites: 0.408
+Gamma shape alpha: 0.682
+Parameters optimization took 1 rounds (0.015 sec)
+Time for fast ML tree search: 0.104 seconds
+
+NOTE: ModelFinder requires 2 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 905 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         2358.118     87  4890.236     4908.978     5308.527
+  2  GTR+F+I       2325.557     88  4827.115     4846.311     5250.213
+  3  GTR+F+G4      2324.763     88  4825.525     4844.721     5248.624
+  4  GTR+F+I+G4    2324.334     89  4826.668     4846.324     5254.574
+  5  GTR+F+R2      2324.899     89  4827.798     4847.455     5255.705
+  6  GTR+F+R3      2323.812     91  4829.624     4850.219     5267.146
+ 14  GTR+F+I+R2    2324.740     90  4829.479     4849.602     5262.193
+ 15  GTR+F+I+R3    2324.034     92  4832.068     4853.142     5274.398
+ 24  SYM+I         2350.338     85  4870.675     4888.527     5279.350
+ 25  SYM+G4        2349.706     85  4869.412     4887.263     5278.087
+ 26  SYM+I+G4      2349.464     86  4870.928     4889.222     5284.411
+ 27  SYM+R2        2350.061     86  4872.121     4890.415     5285.604
+ 46  TVM+F+I       2331.502     87  4837.003     4855.745     5255.293
+ 47  TVM+F+G4      2331.403     87  4836.805     4855.547     5255.096
+ 48  TVM+F+I+G4    2331.458     88  4838.917     4858.113     5262.015
+ 49  TVM+F+R2      2331.456     88  4838.912     4858.108     5262.010
+ 68  TVMe+I        2360.289     84  4888.577     4905.992     5292.444
+ 69  TVMe+G4       2360.367     84  4888.734     4906.149     5292.601
+ 70  TVMe+I+G4     2360.646     85  4891.293     4909.144     5299.967
+ 71  TVMe+R2       2360.223     85  4890.446     4908.297     5299.120
+ 90  TIM3+F+I      2336.421     86  4844.843     4863.136     5258.325
+ 91  TIM3+F+G4     2335.603     86  4843.205     4861.499     5256.688
+ 92  TIM3+F+I+G4   2335.024     87  4844.048     4862.790     5262.338
+ 93  TIM3+F+R2     2336.151     87  4846.302     4865.044     5264.592
+112  TIM3e+I       2368.459     83  4902.918     4919.903     5301.977
+113  TIM3e+G4      2367.696     83  4901.391     4918.375     5300.450
+114  TIM3e+I+G4    2367.282     84  4902.564     4919.978     5306.430
+115  TIM3e+R2      2368.174     84  4904.349     4921.763     5308.215
+134  TIM2+F+I      2326.981     86  4825.961     4844.255     5239.444
+135  TIM2+F+G4     2326.160     86  4824.320     4842.613     5237.802
+136  TIM2+F+I+G4   2325.656     87  4825.312     4844.053     5243.602
+137  TIM2+F+R2     2326.614     87  4827.227     4845.969     5245.518
+156  TIM2e+I       2352.092     83  4870.184     4887.168     5269.242
+157  TIM2e+G4      2351.457     83  4868.914     4885.898     5267.972
+158  TIM2e+I+G4    2351.147     84  4870.294     4887.709     5274.161
+159  TIM2e+R2      2351.794     84  4871.588     4889.003     5275.455
+178  TIM+F+I       2335.098     86  4842.196     4860.490     5255.679
+179  TIM+F+G4      2334.296     86  4840.593     4858.886     5254.075
+180  TIM+F+I+G4    2333.743     87  4841.485     4860.227     5259.776
+181  TIM+F+R2      2334.688     87  4843.376     4862.118     5261.666
+200  TIMe+I        2366.749     83  4899.499     4916.483     5298.557
+201  TIMe+G4       2366.009     83  4898.019     4915.003     5297.077
+202  TIMe+I+G4     2365.614     84  4899.228     4916.643     5303.095
+203  TIMe+R2       2366.332     84  4900.664     4918.079     5304.531
+222  TPM3u+F+I     2342.130     85  4854.260     4872.111     5262.935
+223  TPM3u+F+G4    2342.032     85  4854.064     4871.915     5262.739
+224  TPM3u+F+I+G4  2342.035     86  4856.071     4874.364     5269.553
+225  TPM3u+F+R2    2342.100     86  4856.200     4874.493     5269.682
+244  TPM3+I        2378.492     82  4920.984     4937.543     5315.234
+245  TPM3+G4       2378.495     82  4920.989     4937.549     5315.240
+246  TPM3+I+G4     2378.673     83  4923.345     4940.329     5322.404
+247  TPM3+R2       2378.493     83  4922.986     4939.971     5322.045
+266  TPM2u+F+I     2333.526     85  4837.052     4854.903     5245.727
+267  TPM2u+F+G4    2333.388     85  4836.776     4854.627     5245.450
+268  TPM2u+F+I+G4  2333.369     86  4838.739     4857.032     5252.221
+269  TPM2u+F+R2    2333.403     86  4838.806     4857.100     5252.289
+288  TPM2+I        2361.873     82  4887.746     4904.306     5281.997
+289  TPM2+G4       2361.874     82  4887.748     4904.308     5281.999
+290  TPM2+I+G4     2362.058     83  4890.117     4907.101     5289.176
+291  TPM2+R2       2361.870     83  4889.741     4906.725     5288.800
+310  K3Pu+F+I      2340.890     85  4851.780     4869.631     5260.454
+311  K3Pu+F+G4     2340.804     85  4851.607     4869.458     5260.282
+312  K3Pu+F+I+G4   2340.826     86  4853.653     4871.946     5267.135
+313  K3Pu+F+R2     2340.821     86  4853.642     4871.935     5267.125
+332  K3P+I         2376.798     82  4917.596     4934.155     5311.846
+333  K3P+G4        2376.816     82  4917.633     4934.193     5311.884
+334  K3P+I+G4      2377.016     83  4920.031     4937.015     5319.090
+335  K3P+R2        2376.814     83  4919.628     4936.612     5318.687
+354  TN+F+I        2336.427     85  4842.854     4860.705     5251.528
+355  TN+F+G4       2335.606     85  4841.212     4859.063     5249.886
+356  TN+F+I+G4     2335.026     86  4842.053     4860.346     5255.535
+357  TN+F+R2       2335.670     86  4843.341     4861.634     5256.823
+376  TNe+I         2368.518     82  4901.037     4917.596     5295.287
+377  TNe+G4        2367.755     82  4899.509     4916.069     5293.760
+378  TNe+I+G4      2367.341     83  4900.682     4917.666     5299.741
+379  TNe+R2        2367.785     83  4901.570     4918.554     5300.629
+398  HKY+F+I       2342.134     84  4852.268     4869.683     5256.135
+399  HKY+F+G4      2342.036     84  4852.072     4869.487     5255.939
+400  HKY+F+I+G4    2342.036     85  4854.072     4871.923     5262.746
+401  HKY+F+R2      2342.105     85  4854.211     4872.062     5262.885
+420  K2P+I         2378.536     81  4919.072     4935.213     5308.515
+421  K2P+G4        2378.539     81  4919.078     4935.219     5308.521
+422  K2P+I+G4      2378.715     82  4921.430     4937.990     5315.681
+423  K2P+R2        2378.600     82  4921.200     4937.759     5315.450
+442  F81+F+I       2427.095     83  5020.189     5037.173     5419.248
+443  F81+F+G4      2427.071     83  5020.141     5037.125     5419.200
+444  F81+F+I+G4    2427.197     84  5022.394     5039.809     5426.261
+445  F81+F+R2      2427.131     84  5022.262     5039.676     5426.128
+464  JC+I          2456.919     80  5073.838     5089.567     5458.473
+465  JC+G4         2456.959     80  5073.918     5089.647     5458.553
+466  JC+I+G4       2457.147     81  5076.294     5092.435     5465.736
+467  JC+R2         2457.023     81  5076.046     5092.187     5465.489
+Akaike Information Criterion:           TIM2+F+G4
+Corrected Akaike Information Criterion: TIM2+F+G4
+Bayesian Information Criterion:         TIM2+F+G4
+Best-fit model: TIM2+F+G4 chosen according to BIC
+
+All model information printed to 16s_iqtree_modelfinder.model.gz
+CPU time for ModelFinder: 1.162 seconds (0h:0m:1s)
+Wall-clock time for ModelFinder: 1.439 seconds (0h:0m:1s)
+
+NOTE: 1 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2427.231
+2. Current log-likelihood: -2326.820
+3. Current log-likelihood: -2326.165
+Optimal log-likelihood: -2326.164
+Rate parameters:  A-C: 6.98132  A-G: 20.73262  A-T: 6.98132  C-G: 1.00000  C-T: 48.36733  G-T: 1.00000
+Base frequencies:  A: 0.325  C: 0.266  G: 0.170  T: 0.239
+Gamma shape alpha: 0.221
+Parameters optimization took 3 rounds (0.051 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -2326.164
+Total tree length: 0.312
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1.209 sec (0h:0m:1s)
+Total wall-clock time used: 1.518 sec (0h:0m:1s)
+
+Analysis results written to: 
+  IQ-TREE report:                16s_iqtree_modelfinder.iqtree
+  Tree used for ModelFinder:     16s_iqtree_modelfinder.treefile
+  Screen log file:               16s_iqtree_modelfinder.log
+
+Date and Time: Tue Oct 22 11:52:12 2024
