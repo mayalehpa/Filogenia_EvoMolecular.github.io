@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mayra Herrera Pacheco">
+
+<title>Filogenia_EvoMolecular.github.io</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Filogenia_EvoMolecular.github.io</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
+  <li><a href="#rutinas-para-alinear-con-al-menos-dos-ajustes-de-parámetros" id="toc-rutinas-para-alinear-con-al-menos-dos-ajustes-de-parámetros" class="nav-link" data-scroll-target="#rutinas-para-alinear-con-al-menos-dos-ajustes-de-parámetros">1. Rutinas para alinear con al menos dos ajustes de parámetros</a>
+  <ul class="collapse">
+  <li><a href="#primer-ajuste-párametros-predeterminados" id="toc-primer-ajuste-párametros-predeterminados" class="nav-link" data-scroll-target="#primer-ajuste-párametros-predeterminados">1.1 Primer ajuste: Párametros predeterminados</a></li>
+  <li><a href="#segundo-ajuste-párametros-modificados" id="toc-segundo-ajuste-párametros-modificados" class="nav-link" data-scroll-target="#segundo-ajuste-párametros-modificados">1.2 Segundo ajuste: Párametros modificados</a></li>
+  <li><a href="#interpretación-de-los-resultados" id="toc-interpretación-de-los-resultados" class="nav-link" data-scroll-target="#interpretación-de-los-resultados">1.3 Interpretación de los resultados</a></li>
+  <li><a href="#alineamientos-múltiples" id="toc-alineamientos-múltiples" class="nav-link" data-scroll-target="#alineamientos-múltiples">1.4 Alineamientos Múltiples</a>
+  <ul class="collapse">
+  <li><a href="#creación-de-la-carpeta" id="toc-creación-de-la-carpeta" class="nav-link" data-scroll-target="#creación-de-la-carpeta">1.4.1 Creación de la carpeta</a></li>
+  <li><a href="#código-para-alineamiento-múltiple" id="toc-código-para-alineamiento-múltiple" class="nav-link" data-scroll-target="#código-para-alineamiento-múltiple">1.4.2 Código para alineamiento múltiple</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#rutina-con-estimación-de-modelos-utilizando-model-finder" id="toc-rutina-con-estimación-de-modelos-utilizando-model-finder" class="nav-link" data-scroll-target="#rutina-con-estimación-de-modelos-utilizando-model-finder">2. Rutina con estimación de modelos utilizando Model Finder</a>
+  <ul class="collapse">
+  <li><a href="#ejecutar-modelfinder-para-seleccionar-el-mejor-modelo" id="toc-ejecutar-modelfinder-para-seleccionar-el-mejor-modelo" class="nav-link" data-scroll-target="#ejecutar-modelfinder-para-seleccionar-el-mejor-modelo">2.1 Ejecutar ModelFinder para seleccionar el mejor modelo</a>
+  <ul class="collapse">
+  <li><a href="#coi.aln.fasta" id="toc-coi.aln.fasta" class="nav-link" data-scroll-target="#coi.aln.fasta">2.1.1 coi.aln.fasta</a></li>
+  <li><a href="#s.aln.fasta" id="toc-s.aln.fasta" class="nav-link" data-scroll-target="#s.aln.fasta">2.1.2 16s.aln.fasta</a></li>
+  </ul></li>
+  <li><a href="#mostrar-el-mejor-modelo" id="toc-mostrar-el-mejor-modelo" class="nav-link" data-scroll-target="#mostrar-el-mejor-modelo">2.2 Mostrar el mejor modelo</a>
+  <ul class="collapse">
+  <li><a href="#coi.aln.fasta-1" id="toc-coi.aln.fasta-1" class="nav-link" data-scroll-target="#coi.aln.fasta-1">2.2.1 coi.aln.fasta</a></li>
+  <li><a href="#s.aln.fasta-1" id="toc-s.aln.fasta-1" class="nav-link" data-scroll-target="#s.aln.fasta-1">2.2.2 16s.aln.fasta</a></li>
+  </ul></li>
+  <li><a href="#análisis-de-los-resultados" id="toc-análisis-de-los-resultados" class="nav-link" data-scroll-target="#análisis-de-los-resultados">2.3 Análisis de los Resultados</a></li>
+  </ul></li>
+  <li><a href="#rutina-con-estimación-de-modelos-utilizando-partition-finder" id="toc-rutina-con-estimación-de-modelos-utilizando-partition-finder" class="nav-link" data-scroll-target="#rutina-con-estimación-de-modelos-utilizando-partition-finder">3. Rutina con estimación de modelos utilizando Partition Finder</a>
+  <ul class="collapse">
+  <li><a href="#instalaciones-necesarias" id="toc-instalaciones-necesarias" class="nav-link" data-scroll-target="#instalaciones-necesarias">3.1 Instalaciones necesarias</a>
+  <ul class="collapse">
+  <li><a href="#instalación-de-anaconda" id="toc-instalación-de-anaconda" class="nav-link" data-scroll-target="#instalación-de-anaconda">3.1.1 Instalación de Anaconda</a></li>
+  <li><a href="#crea-un-entorno-en-anaconda-para-poder-instalar-python-2.7.18" id="toc-crea-un-entorno-en-anaconda-para-poder-instalar-python-2.7.18" class="nav-link" data-scroll-target="#crea-un-entorno-en-anaconda-para-poder-instalar-python-2.7.18">3.1.2 Crea un entorno en Anaconda para poder instalar Python 2.7.18</a></li>
+  <li><a href="#instala-partitionfinder" id="toc-instala-partitionfinder" class="nav-link" data-scroll-target="#instala-partitionfinder">3.1.3 Instala PartitionFinder</a></li>
+  </ul></li>
+  <li><a href="#ejecuta-partitionfinder" id="toc-ejecuta-partitionfinder" class="nav-link" data-scroll-target="#ejecuta-partitionfinder">3.2 Ejecuta PartitionFinder</a>
+  <ul class="collapse">
+  <li><a href="#configuración-del-archivo-.cfg" id="toc-configuración-del-archivo-.cfg" class="nav-link" data-scroll-target="#configuración-del-archivo-.cfg">3.2.1 Configuración del archivo .cfg</a></li>
+  <li><a href="#selección-del-modelo" id="toc-selección-del-modelo" class="nav-link" data-scroll-target="#selección-del-modelo">3.2.2 Selección del modelo</a></li>
+  </ul></li>
+  <li><a href="#análisis-de-resultados" id="toc-análisis-de-resultados" class="nav-link" data-scroll-target="#análisis-de-resultados">3.3 Análisis de Resultados</a>
+  <ul class="collapse">
+  <li><a href="#resultados-para-coi" id="toc-resultados-para-coi" class="nav-link" data-scroll-target="#resultados-para-coi">3.3.1 Resultados para COI</a></li>
+  <li><a href="#resultados-para-16s" id="toc-resultados-para-16s" class="nav-link" data-scroll-target="#resultados-para-16s">3.3.2 Resultados para 16S</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#rutina-con-estimación-de-modelos-utilizando-mixture-models" id="toc-rutina-con-estimación-de-modelos-utilizando-mixture-models" class="nav-link" data-scroll-target="#rutina-con-estimación-de-modelos-utilizando-mixture-models">4. Rutina con estimación de modelos utilizando Mixture Models</a>
+  <ul class="collapse">
+  <li><a href="#mixturefinder" id="toc-mixturefinder" class="nav-link" data-scroll-target="#mixturefinder">4.1 MixtureFinder</a></li>
+  <li><a href="#analizando-el-mejor-modelo-escogido-por-mixturefinder" id="toc-analizando-el-mejor-modelo-escogido-por-mixturefinder" class="nav-link" data-scroll-target="#analizando-el-mejor-modelo-escogido-por-mixturefinder">4.2 Analizando el mejor modelo escogido por MixtureFinder</a></li>
+  <li><a href="#análisis-de-resultados-1" id="toc-análisis-de-resultados-1" class="nav-link" data-scroll-target="#análisis-de-resultados-1">4.3 Análisis de resultados</a></li>
+  </ul></li>
+  <li><a href="#resumen-y-análisis-final" id="toc-resumen-y-análisis-final" class="nav-link" data-scroll-target="#resumen-y-análisis-final">5. Resumen y Análisis final</a></li>
+  <li><a href="#referencias-bibliográficas" id="toc-referencias-bibliográficas" class="nav-link" data-scroll-target="#referencias-bibliográficas">6. Referencias Bibliográficas</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Filogenia_EvoMolecular.github.io</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mayra Herrera Pacheco </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="objetivo" class="level1">
+<h1>Objetivo</h1>
+<p>Este taller busca generar un flujo de trabajo reproducible y extensible para alinear secuencias y definir el mejor esquema de partición y sus modelos asociados.</p>
+<ul>
+<li><p>Los archivos resultante de los análisis pueden ser visualizados y descargados en el siguiente repositorio, así como el scrip de Quarto: <a href="https://github.com/mayalehpa/Filogenia_EvoMolecular">Repositorio Filogenia_EvoMolecular</a></p></li>
+<li><p>Cada Rutina cuenta con la interpretación de resultados.</p></li>
+</ul>
+</section>
+<section id="rutinas-para-alinear-con-al-menos-dos-ajustes-de-parámetros" class="level1">
+<h1>1. Rutinas para alinear con al menos dos ajustes de parámetros</h1>
+<p>Las lineas de código están para ejecutarse directamente en la terminal.</p>
+<section id="primer-ajuste-párametros-predeterminados" class="level2">
+<h2 class="anchored" data-anchor-id="primer-ajuste-párametros-predeterminados">1.1 Primer ajuste: Párametros predeterminados</h2>
+<ul>
+<li><p>En tu terminal ve al directorio donde se alejan los archivos .fasta</p></li>
+<li><p>Ve a tu terminal de WSL y ejecuta el siguiente código:</p></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#COI</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">mafft</span> <span class="at">--auto</span> coi.fasta <span class="op">&gt;</span> coi.aln.fasta</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#16s</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">mafft</span> <span class="at">--auto</span> 16s.fasta <span class="op">&gt;</span> 16s.aln.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="segundo-ajuste-párametros-modificados" class="level2">
+<h2 class="anchored" data-anchor-id="segundo-ajuste-párametros-modificados">1.2 Segundo ajuste: Párametros modificados</h2>
+<p><em>–maxiterate 1000:</em> establece el número máximo de iteraciones en 1000</p>
+<p><em>–localpair:</em> secuencias por debajo de 200</p>
+<p><em>–Gap open penalty:</em> de 1.53</p>
+<ul>
+<li>Para los párametros modificados usaré maxiterate 1000, localpair y un GAP de 1.53</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mafft</span> <span class="at">--maxiterate</span> 1000 <span class="at">--localpair</span> <span class="at">--op</span> 1.53 coi.fasta <span class="op">&gt;</span> coi_custom.aln.fasta</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">mafft</span> <span class="at">--maxiterate</span> 1000 <span class="at">--localpair</span> <span class="at">--op</span> 1.53 16s.fasta <span class="op">&gt;</span> 16s_custom.aln.fasta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="interpretación-de-los-resultados" class="level2">
+<h2 class="anchored" data-anchor-id="interpretación-de-los-resultados">1.3 Interpretación de los resultados</h2>
+<p>Para comparar las alineaciones, puedes usar herramientas como <code>diff</code> para ver las diferencias entre los archivos de alineación:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#COI</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">diff</span> coi.aln.fasta coi_custom.aln.fasta <span class="op">&gt;</span> coi_diff.txt</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#16s</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">diff</span> 16s.aln.fasta 16s_custom.aln.fasta <span class="op">&gt;</span> 16s_diff.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Para mostrar las diferencias ejecuta el siguiente comando</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> coi_diff.txt</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> 16s_diff.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Al comparar los archivos generados tras ambos alineamientos de secuencias, observé que tenían el mismo contenido y un tamaño de 0 KB, lo que indica la ausencia de diferencias. Esto podría deberse a que el archivo coi.fasta no contiene suficiente variabilidad entre las secuencias, limitando el impacto de los parámetros personalizados. Esto ocurrio tanto para el análisis con COI y 16s.</p>
+</section>
+<section id="alineamientos-múltiples" class="level2">
+<h2 class="anchored" data-anchor-id="alineamientos-múltiples">1.4 Alineamientos Múltiples</h2>
+<p>Para evitar alinear cada archivo individualmente, podemos usar una línea de comando que alinee automáticamente múltiples regiones ubicadas en una misma carpeta.</p>
+<section id="creación-de-la-carpeta" class="level3">
+<h3 class="anchored" data-anchor-id="creación-de-la-carpeta">1.4.1 Creación de la carpeta</h3>
+<ul>
+<li>Crea un nuevo directorio: vamos a crear un directorio dentro de la carpeta fasta_files para almacenar los outputs alineados. En este caso se llamara “Aline_multiples”.</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> Aline_multiples</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="código-para-alineamiento-múltiple" class="level3">
+<h3 class="anchored" data-anchor-id="código-para-alineamiento-múltiple">1.4.2 Código para alineamiento múltiple</h3>
+<ul>
+<li>Ejecuta el siguiente código para alineamiento múltiple, recuerda estar ubicado en la carpeta “fasta_files”, alineara todos los archivos que se encuentren dentro de la carpeta con .fasta</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> <span class="pp">*</span>.fasta<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="va">base_name</span><span class="op">=</span><span class="st">"</span><span class="va">${file</span><span class="op">%</span>.fasta<span class="va">}</span><span class="st">"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">mafft</span> <span class="at">--auto</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="op">&gt;</span> <span class="st">"Aline_multiples/</span><span class="va">${base_name}</span><span class="st">.aln.fasta"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Nota:</strong> la linea de mafft se pueden usar con párametros ajustados.</p>
+</section>
+</section>
+</section>
+<section id="rutina-con-estimación-de-modelos-utilizando-model-finder" class="level1">
+<h1>2. Rutina con estimación de modelos utilizando Model Finder</h1>
+<p>Para poder utilizar Model Finder debemos previamente instalar Iqtree2 en nuestra terminal.</p>
+<section id="ejecutar-modelfinder-para-seleccionar-el-mejor-modelo" class="level2">
+<h2 class="anchored" data-anchor-id="ejecutar-modelfinder-para-seleccionar-el-mejor-modelo">2.1 Ejecutar ModelFinder para seleccionar el mejor modelo</h2>
+<ul>
+<li>Crear una carpeta para guardar los resultados</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> Resultados_iqtree_modelfinder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="coi.aln.fasta" class="level3">
+<h3 class="anchored" data-anchor-id="coi.aln.fasta">2.1.1 coi.aln.fasta</h3>
+<p>El siguiente comando ejecutará IQ-TREE usando Model Finder para determinar el mejor modelo.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree2</span> <span class="at">-s</span> coi.aln.fasta <span class="at">-m</span> MF <span class="at">-redo</span> <span class="at">-pre</span> Coi_iqtree_modelfinder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>iqtree2</code> Es como se llama a la última versión de Iqtree.</p>
+<p><code>-redo</code> Esta opción indica a IQ-TREE que reemplace cualquier resultado anterior si ya existe un archivo de salida con el mismo nombre.</p>
+<p><code>MFP</code> Si agregamos P a MF + Indicar el Bootstrap sería para crear un árbol, en este caso solo queremos observar la selección del mejor modelo.</p>
+</section>
+<section id="s.aln.fasta" class="level3">
+<h3 class="anchored" data-anchor-id="s.aln.fasta">2.1.2 16s.aln.fasta</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree2</span> <span class="at">-s</span> 16s.aln.fasta <span class="at">-m</span> MF <span class="at">-redo</span> <span class="at">-pre</span> 16s_iqtree_modelfinder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="mostrar-el-mejor-modelo" class="level2">
+<h2 class="anchored" data-anchor-id="mostrar-el-mejor-modelo">2.2 Mostrar el mejor modelo</h2>
+<section id="coi.aln.fasta-1" class="level3">
+<h3 class="anchored" data-anchor-id="coi.aln.fasta-1">2.2.1 coi.aln.fasta</h3>
+<p>Con la siguiente línea de comando podemos observar cual fue el mejor modelo:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"Best-fit model"</span> Coi_iqtree_modelfinder.iqtree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="s.aln.fasta-1" class="level3">
+<h3 class="anchored" data-anchor-id="s.aln.fasta-1">2.2.2 16s.aln.fasta</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"Best-fit model"</span> 16s_iqtree_modelfinder.iqtree</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="análisis-de-los-resultados" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-los-resultados">2.3 Análisis de los Resultados</h2>
+<ul>
+<li><p>El análisis del gen COI con ModelFinder seleccionó el modelo <strong>HKY+F+G4</strong> como el más adecuado según el criterio de información bayesiano (BIC). El modelo HKY es un modelo de sustitución de nucleótidos que permite diferentes tasas de transición y transversión y considera las frecuencias de las bases <span class="citation" data-cites="hasegawa1985">(<a href="#ref-hasegawa1985" role="doc-biblioref">Hasegawa et al., 1985</a>)</span>. Es una extensión del modelo Kimura 2-parameter (K80). Este modelo es útil para la evolución de secuencias de ADN donde las transiciones son más frecuentes que las transversiones <span class="citation" data-cites="thephyl2009">(<a href="#ref-thephyl2009" role="doc-biblioref">Lemey et al., 2009</a>)</span>.</p></li>
+<li><p>El análisis del gen <strong>16S</strong> con ModelFinder seleccionó el modelo <strong>TIM2+F+G4</strong> como el más adecuado según el criterio de información bayesiano (BIC). Este modelo utiliza la matriz <strong>TIM2</strong> (Transitional model 2), que permite diferentes tasas de sustitución entre transiciones y transversiones<span class="citation" data-cites="iq-tree2024">(<a href="#ref-iq-tree2024" role="doc-biblioref">IQ-TREE, 2024</a>)</span>, lo cual es especialmente útil para genes como el 16S donde estas variaciones son comunes. La opción <strong>+F</strong> incorpora las frecuencias observadas de nucleótidos, mejorando así la precisión del modelo al considerar la composición real de bases en el alineamiento. Además, la inclusión de la corrección <strong>+G4</strong> introduce heterogeneidad en las tasas de evolución a través de cuatro categorías gamma, permitiendo al modelo capturar variaciones en la velocidad de cambio entre diferentes sitios del gen 16S.</p></li>
+</ul>
+</section>
+</section>
+<section id="rutina-con-estimación-de-modelos-utilizando-partition-finder" class="level1">
+<h1>3. Rutina con estimación de modelos utilizando Partition Finder</h1>
+<p>–&gt; Para poder ejecutar Partition Finder debemos instalar Python 2.7.10 o superior (no 3.x)</p>
+<p>–&gt; Para evitar conflicto con las librerias instalaremos Anaconda<span class="citation" data-cites="anacondasoftwaredistribution2016">(<a href="#ref-anacondasoftwaredistribution2016" role="doc-biblioref">Anaconda Software Distribution, 2016</a>)</span> en la terminal y posteriormente realizaremos la instalación de Python 2.7.18. En este paso es bueno utilizar la terminal nativa de Linux ya que si se instala desde el usuario de windows hay conflictos.</p>
+<section id="instalaciones-necesarias" class="level2">
+<h2 class="anchored" data-anchor-id="instalaciones-necesarias">3.1 Instalaciones necesarias</h2>
+<section id="instalación-de-anaconda" class="level3">
+<h3 class="anchored" data-anchor-id="instalación-de-anaconda">3.1.1 Instalación de Anaconda</h3>
+<p>En este caso descargare desde su página el <a href="https://repo.anaconda.com/archive/">instalador</a> y lo ejecutare desde una terminal nativa de linux.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Descargas</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> ./Anaconda3-2024.06-1-Linux-x86_64.sh</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span><span class="st">"/home/may/anaconda/bin:</span><span class="va">$PATH</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>may</code> hace referencia al usuario que tengo en linux, debes modificarlo de acuerdo a tu usuario.</p>
+</section>
+<section id="crea-un-entorno-en-anaconda-para-poder-instalar-python-2.7.18" class="level3">
+<h3 class="anchored" data-anchor-id="crea-un-entorno-en-anaconda-para-poder-instalar-python-2.7.18">3.1.2 Crea un entorno en Anaconda para poder instalar Python 2.7.18</h3>
+<p>Esto es un paso importante ya que nos ayudara a realizar el análisis con PartitionFinder.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> py27 python=2.7.18</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">## Activar el entorno</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate py27</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co">## Verifica la versión de python</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">--version</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="co">## Si quieres desactivar el entorno</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>py27</code> hace referencia al nombre que le quise colocar al entorno</p>
+</section>
+<section id="instala-partitionfinder" class="level3">
+<h3 class="anchored" data-anchor-id="instala-partitionfinder">3.1.3 Instala PartitionFinder</h3>
+<p>Ahora que estamos en el entorno de python 2.7.18, y con las librerias necesarias podremos instalar y ejecutar PartitionFinder para nuestro análisis.</p>
+<p>3.1 Descarga PartitionFinder en su <a href="https://www.robertlanfear.com/partitionfinder/">página principal</a> el archivo Source code (tar.gz)</p>
+<p>3.2 Al descomprimir, aloja la carpeta en bin (sino tienes la carpeta bin, la puedes crear)</p>
+<p>3.3 Ve a la terminal y ve hacia el directorio donde esta la carpeta</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/bin/partitionfinder-2.1.1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="ejecuta-partitionfinder" class="level2">
+<h2 class="anchored" data-anchor-id="ejecuta-partitionfinder">3.2 Ejecuta PartitionFinder</h2>
+<p>Después de estar en la carpeta de partitionfinder-2.1.1, ejecuta la siguiente linea de comando:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">phyton</span> PartitionFinder.phy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="configuración-del-archivo-.cfg" class="level3">
+<h3 class="anchored" data-anchor-id="configuración-del-archivo-.cfg">3.2.1 Configuración del archivo .cfg</h3>
+<ul>
+<li><p>Para poder hacer el análisis de selección de modelo primero debemos configurar el archivo .cfg</p></li>
+<li><p>Configurar el archivo partition_finder.cfg:</p></li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> partition_finder.cfg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>El comando anterior es para crear el archivo de configuración con el <strong>editor vim</strong>, procederemos a ingresar la siguiente información: (las opciones se modifican de acuerdo a nuestros datos)</p>
+<p><strong>Importante:</strong> Los archivos que admite PartitionFinder es .nex o .phy. En nuestro caso usaremos .phy</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Ejemplo con el archivo 16s_iqtree_modelfinder.uniqueseq.phy</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">## ALIGNMENT FILE ##</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="ex">alignment</span> = 16s_iqtree_modelfinder.uniqueseq.phy<span class="kw">;</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co">## BRANCHLENGTHS: linked | unlinked ##</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="ex">branchlengths</span> = linked<span class="kw">;</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co">## MODELS OF EVOLUTION: all | allx | mrbayes | beast | gamma | gammai | &lt;list&gt; ##</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="ex">models</span> = all<span class="kw">;</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="co"># MODEL SELECCTION: AIC | AICc | BIC #</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="ex">model_selection</span> = BIC<span class="kw">;</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a><span class="co">## DATA BLOCKS: see manual for how to define ##</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a><span class="ex">[data_blocks]</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="ex">all</span> = 1-905<span class="kw">;</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="co">## SCHEMES, search: all | user | greedy | rcluster | rclusterf | kmeans ##</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a><span class="ex">[schemes]</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a><span class="ex">search</span> = all<span class="kw">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Para profundizar sobre la ejecución y análisis en PartitionFinder puedes ver el <a href="https://www.robertlanfear.com/partitionfinder/tutorial/">tutorial</a> en la página principal.</p>
+</section>
+<section id="selección-del-modelo" class="level3">
+<h3 class="anchored" data-anchor-id="selección-del-modelo">3.2.2 Selección del modelo</h3>
+<p>Para realizar el análisis debemos tener el archivo .phy y el archivo .cfg en la misma carpeta que el ejecutable (PartitionFinder.py). Luego ejecuta el siguiente código:</p>
+<p><strong>NOTA:</strong> El programa solo reconoce un archivo de configuración bajo el nombre de “partition_finder.cfg”. Por ello debemos configurarlo para cada archivo de .phy (ver punto <a href="#configuración-del-archivo-.cfg">3.2.1 Configuración del archivo .cfg</a>)</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> PartitionFinder.py partition_finder.cfg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Para visualizar los resultados después de este análisis en la carpeta <code>analysis</code> se guarda un archivo .txt llamado best_scheme. Para poder guardar el resultado podemos renombrarlo, así no se va a sobreescribir.</p>
+<section id="comando-para-renombrar-el-archivo" class="level4">
+<h4 class="anchored" data-anchor-id="comando-para-renombrar-el-archivo">Comando para renombrar el archivo</h4>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> best_scheme.txt best_scheme_coi.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>Luego modificaremos el archivo de configuración para 16s y ejecutaremos el primer código. Posteriormente renombramos el archivo .txt para no confundirnos.</p></li>
+<li><p>En caso de estar presentando dificultades con la obtención de resultados podemos usar el siguiente comando para forzar.</p></li>
+</ul>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> PartitionFinder.py partition_finder.cfg <span class="at">--force-restart</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+</section>
+<section id="análisis-de-resultados" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-resultados">3.3 Análisis de Resultados</h2>
+<section id="resultados-para-coi" class="level3">
+<h3 class="anchored" data-anchor-id="resultados-para-coi">3.3.1 Resultados para COI</h3>
+<p>El análisis con PartitionFinder muestra que el modelo seleccionado fue HKY+G <span class="citation" data-cites="hasegawa1985 iq-tree2024">(<a href="#ref-hasegawa1985" role="doc-biblioref">Hasegawa et al., 1985</a>; <a href="#ref-iq-tree2024" role="doc-biblioref">IQ-TREE, 2024</a>)</span>. La selección del modelo se basó en el criterio de información bayesiano (BIC), que arrojó un valor de 4944.97, indicando una buena adecuación del modelo en relación con el número de parámetros (100).</p>
+</section>
+<section id="resultados-para-16s" class="level3">
+<h3 class="anchored" data-anchor-id="resultados-para-16s">3.3.2 Resultados para 16S</h3>
+<p>El análisis con PartitionFinder muestra que el modelo seleccionado fue GTR+G. Abarcando un total de 905 sitios con 88 parámetros.</p>
+</section>
+</section>
+</section>
+<section id="rutina-con-estimación-de-modelos-utilizando-mixture-models" class="level1">
+<h1>4. Rutina con estimación de modelos utilizando Mixture Models</h1>
+<section id="mixturefinder" class="level2">
+<h2 class="anchored" data-anchor-id="mixturefinder">4.1 MixtureFinder</h2>
+<p>Para crear la rutina utilizando <a href="http://www.iqtree.org/doc/Complex-Models">Mixture Models</a>, usaremos la herramienta MixtureFinder <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> que se encuentra en Iqtree2 para saber que modelos podemos usar <span class="citation" data-cites="ren">(<a href="#ref-ren" role="doc-biblioref">Ren et al., n.d.</a>)</span>.</p>
+<ol type="1">
+<li><p>Es importante que los archivos estén en formato FASTA o PHYLIP.</p></li>
+<li><p>Crea una nueva carpeta para guardar los resultados, recuerda agregar los archivos alineados FASTA o PHYLIP.</p></li>
+</ol>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> MixtureFinder_analysis </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Ejecuta el comando</li>
+</ol>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#16s</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree2</span> <span class="at">-s</span> 16s_iqtree_modelfinder.uniqueseq.phy <span class="at">-m</span> MIX+MF </span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co">#COI</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree2</span> <span class="at">-s</span> Coi_iqtree_modelfinder.uniqueseq.phy <span class="at">-m</span> MIX+MF </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>Comando para saber cuál fue el mejor modelo</li>
+</ol>
+<p>Entre todos los documentos generados al correr el análisis encontramos el archivo .log, el cual contiene los resultados y podremos observar el “Best-fit model”. Pero empleando el siguiente comando en la terminal podremos obtenerlo de forma rápida:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#16s</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> 16s_iqtree_modelfinder.uniqueseq.phy.log <span class="kw">|</span> <span class="fu">grep</span> <span class="st">"Best-fit model:"</span> </span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co">#COI</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> Coi_iqtree_modelfinder.uniqueseq.phy.log <span class="kw">|</span> <span class="fu">grep</span> <span class="st">"Best-fit model:"</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este caso el mejor modelo de mezcla encontrado por el programa para 16s usando BIC fue: MIX{TIM2+FO,JC+FO}+G4</p>
+<ul>
+<li>Dos modelos de sustitución (TIM2+FO y JC+FO).</li>
+<li>Gamma rate heterogeneity con cuatro categorías (+G4)</li>
+</ul>
+<p>Para COI el mejor modelo de mezcla encontra usando BIC fue: MIX{HKY+FO,JC+FO}+G4</p>
+</section>
+<section id="analizando-el-mejor-modelo-escogido-por-mixturefinder" class="level2">
+<h2 class="anchored" data-anchor-id="analizando-el-mejor-modelo-escogido-por-mixturefinder">4.2 Analizando el mejor modelo escogido por MixtureFinder</h2>
+<p>Ahora vamos a realizar el análisis con el modelo seleccionado en MixtureFinder</p>
+<ul>
+<li>Ejecuta el siguiente comando:</li>
+</ul>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#16s</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree2</span> <span class="at">-s</span> 16s_iqtree_modelfinder.uniqueseq.phy <span class="at">-m</span> <span class="st">"MIX{TIM2+FO,JC+FO}+G4"</span> <span class="at">-redo</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co">#COI</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="ex">iqtree2</span> <span class="at">-s</span> Coi_iqtree_modelfinder.uniqueseq.phy <span class="at">-m</span> <span class="st">"MIX{HKY+FO,JC+FO}+G4"</span> <span class="at">-redo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>redo</code> Me permite sobreescribir en el archivo que ya se habia generado del análisis anterior</p>
+</section>
+<section id="análisis-de-resultados-1" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-resultados-1">4.3 Análisis de resultados</h2>
+<p>Para la estimación de modelos usando Mixture Models en IQ-TREE, utilicé MixtureFinder, que evaluó diferentes modelos de sustitución para encontrar el ajuste óptimo según el criterio BIC. El análisis concluyó que el mejor modelo fue MIX{TIM2+FO,JC+FO}+G4 para el alineamiento de 16s. Este modelo combina los modelos de sustitución TIM2+FO y JC+FO, además de incorporar la heterogeneidad de tasas de evolución entre sitios con el modelo Gamma (+G4), el cual permite cuatro categorías de tasas. La selección de este modelo mixto indica que, en lugar de asignar un solo modelo a todos los sitios de la secuencia, se permite que diferentes sitios tengan probabilidades de pertenecer a distintas categorías de modelos de sustitución, lo que mejora la precisión de la inferencia al reflejar la variabilidad evolutiva en el conjunto de datos. Esta flexibilidad es esencial en análisis complejos, ya que incrementa la capacidad del modelo para capturar patrones evolutivos específicos, haciendo que el árbol resultante sea más robusto y adecuado para las características observadas en las secuencias.</p>
+<p>El análisis del gen COI utilizando MixtureFinder identificó el modelo óptimo como MIX{HKY+FO, JC+FO} + G4. Este modelo es un modelo mixto que emplea dos componentes de sustitución, HKY+FO (un modelo que considera frecuencias observadas de bases y diferentes tasas de transición y transversión) y JC+FO (modelo de Jukes-Cantor con frecuencias observadas) <span class="citation" data-cites="jukes1969">(<a href="#ref-jukes1969" role="doc-biblioref">Jukes &amp; Cantor, 1969</a>)</span>, además de una corrección de heterogeneidad de tasas de evolución gamma en cuatro categorías (+G4). La combinación de estos componentes permite que cada sitio en la secuencia tenga una probabilidad asignada de pertenecer a uno de los dos modelos de sustitución, lo cual refleja adecuadamente la variabilidad evolutiva en el gen COI.</p>
+</section>
+</section>
+<section id="resumen-y-análisis-final" class="level1">
+<h1>5. Resumen y Análisis final</h1>
+<p>A continuación se mostrara un resumen en forma de tabla, para visualizar el mejor modelo escogido por cada programa para cada gen.</p>
+<table class="caption-top table">
+<caption>Tabla 1. Resumen de los programas y selección del modelo para cada Gen analizado</caption>
+<thead>
+<tr class="header">
+<th>Gen</th>
+<th>Programa</th>
+<th>Mejor Modelo</th>
+<th>Criterio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>COI</td>
+<td>ModelFinder</td>
+<td>HKY+F+G4</td>
+<td>BIC</td>
+</tr>
+<tr class="even">
+<td>16s</td>
+<td>ModelFinder</td>
+<td>TIM2+F+G4</td>
+<td>BIC</td>
+</tr>
+<tr class="odd">
+<td>COI</td>
+<td>PartitionFinder</td>
+<td>HKY+G</td>
+<td>BIC</td>
+</tr>
+<tr class="even">
+<td>16s</td>
+<td>PartitionFinder</td>
+<td>GTR+G</td>
+<td>BIC</td>
+</tr>
+<tr class="odd">
+<td>COI</td>
+<td>MixtureFinder</td>
+<td>MIX{HKY+FO,JC+FO}+G4</td>
+<td>BIC</td>
+</tr>
+<tr class="even">
+<td>16s</td>
+<td>MixtureFinder</td>
+<td>MIX{TIM2+FO,JC+FO}+G4</td>
+<td>BIC</td>
+</tr>
+</tbody>
+</table>
+<p>El análisis comparativo de los modelos evolutivos seleccionados para los genes COI y 16S, realizado a través de diferentes programas, muestra la importancia de considerar múltiples enfoques en la elección del modelo adecuado. Por ejemplo, en la selección del modelo HKY para el gen COI, los tres programas utilizados lo escogieron como uno de los mejores modelos. De esta manera, el uso de múltiples herramientas no solo reafirma la elección de un modelo, sino que también permite explorar diferentes estrategias, como modelos mixtos y particionamiento de datos. Esta diversidad en los enfoques proporciona una comprensión más robusta de los modelos evolutivos, lo que me permitirá obtener un análisis más preciso.</p>
+</section>
+<section id="referencias-bibliográficas" class="level1">
+<h1>6. Referencias Bibliográficas</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-anacondasoftwaredistribution2016" class="csl-entry" role="listitem">
+Anaconda Software Distribution. (2016). <em>Computer software</em>. <a href="https://anaconda.com">https://anaconda.com</a>
+</div>
+<div id="ref-hasegawa1985" class="csl-entry" role="listitem">
+Hasegawa, M., Kishino, H., &amp; Yano, T. (1985). Dating of the human-ape splitting by a molecular clock of mitochondrial DNA. <em>Journal of Molecular Evolution</em>, <em>22</em>(2), 160–174. <a href="https://doi.org/10.1007/BF02101694">https://doi.org/10.1007/BF02101694</a>
+</div>
+<div id="ref-iq-tree2024" class="csl-entry" role="listitem">
+IQ-TREE. (2024). <em>Substitution models: DNA models</em>. <a href="http://www.iqtree.org/doc/Substitution-Models">http://www.iqtree.org/doc/Substitution-Models</a>
+</div>
+<div id="ref-jukes1969" class="csl-entry" role="listitem">
+Jukes, T. H., &amp; Cantor, C. R. (1969). <em>Evolution of Protein Molecules</em> (pp. 21–132). Elsevier. <a href="https://doi.org/10.1016/B978-1-4832-3211-9.50009-7">https://doi.org/10.1016/B978-1-4832-3211-9.50009-7</a>
+</div>
+<div id="ref-thephyl2009" class="csl-entry" role="listitem">
+Lemey, P., Salemi, M., &amp; Vandamme, A.-M. (Eds.). (2009). <em>The phylogenetic handbook: a practical approach to phylogenetic analysis and hypothesis testing</em> (2. ed, 6. print). Cambridge University Press.
+</div>
+<div id="ref-ren" class="csl-entry" role="listitem">
+Ren, H., Wong, T. K., Minh, B. Q., &amp; Lanfear, R. (n.d.). <em>MixtureFinder: Estimating DNA mixture models for phylogenetic analyses</em>. <a href="https://doi.org/10.1101/2024.03.20.586035">https://doi.org/10.1101/2024.03.20.586035</a>
+</div>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><strong>MixtureFinder:</strong> Es una herramienta específica disponible en IQ-TREE (a partir de la versión 2.3.1) que ayuda a seleccionar el número óptimo de clases y el modelo de sustitución para cada clase dentro de un modelo de mezcla. <em>MixtureFinder</em> automatiza el proceso de selección de estos modelos de mezcla, ajustando el número de clases y evaluando el mejor modelo en función de criterios como BIC, AIC o pruebas de verosimilitud.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

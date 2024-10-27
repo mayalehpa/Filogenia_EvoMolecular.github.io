@@ -1,0 +1,219 @@
+{
+    "sources": [
+        {
+            "edition": "2. ed, 6. print",
+            "editor": [
+                {
+                    "family": "Lemey",
+                    "given": "Philippe"
+                },
+                {
+                    "family": "Salemi",
+                    "given": "Marco"
+                },
+                {
+                    "family": "Vandamme",
+                    "given": "Anne-Mieke"
+                }
+            ],
+            "id": "thephyl2009",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "language": "eng",
+            "publisher": "Cambridge University Press",
+            "publisher-place": "Cambridge",
+            "title": "The phylogenetic handbook: a practical approach to phylogenetic analysis and hypothesis testing",
+            "title-short": "The phylogenetic handbook",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1007/BF02101694",
+            "URL": "http://link.springer.com/10.1007/BF02101694",
+            "author": [
+                {
+                    "family": "Hasegawa",
+                    "given": "Masami"
+                },
+                {
+                    "family": "Kishino",
+                    "given": "Hirohisa"
+                },
+                {
+                    "family": "Yano",
+                    "given": "Taka-aki"
+                }
+            ],
+            "container-title": "Journal of Molecular Evolution",
+            "id": "hasegawa1985",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1985,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "160-174",
+            "title": "Dating of the human-ape splitting by a molecular clock of mitochondrial DNA",
+            "type": "article-journal",
+            "volume": "22"
+        },
+        {
+            "URL": "http://www.iqtree.org/doc/Substitution-Models",
+            "author": [
+                {
+                    "family": "IQ-TREE"
+                }
+            ],
+            "id": "iq-tree2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        5,
+                        14
+                    ]
+                ]
+            },
+            "title": "Substitution models: DNA models",
+            "title-short": "Substitution models",
+            "type": ""
+        },
+        {
+            "URL": "https://anaconda.com",
+            "author": [
+                {
+                    "family": "Anaconda Software Distribution"
+                }
+            ],
+            "id": "anacondasoftwaredistribution2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        11
+                    ]
+                ]
+            },
+            "title": "Computer software",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1101/2024.03.20.586035",
+            "author": [
+                {
+                    "family": "Ren",
+                    "given": "Huaiyan"
+                },
+                {
+                    "family": "Wong",
+                    "given": "Thomas Kf"
+                },
+                {
+                    "family": "Minh",
+                    "given": "Bui Quang"
+                },
+                {
+                    "family": "Lanfear",
+                    "given": "Robert"
+                }
+            ],
+            "id": "ren",
+            "language": "en",
+            "title": "MixtureFinder: Estimating DNA mixture models for phylogenetic analyses",
+            "title-short": "MixtureFinder",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1007/BF02101694",
+            "URL": "http://link.springer.com/10.1007/BF02101694",
+            "author": [
+                {
+                    "family": "Hasegawa",
+                    "given": "Masami"
+                },
+                {
+                    "family": "Kishino",
+                    "given": "Hirohisa"
+                },
+                {
+                    "family": "Yano",
+                    "given": "Taka-aki"
+                }
+            ],
+            "container-title": "Journal of Molecular Evolution",
+            "id": "hasegawa1985a",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1985,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "160-174",
+            "title": "Dating of the human-ape splitting by a molecular clock of mitochondrial DNA",
+            "type": "article-journal",
+            "volume": "22"
+        },
+        {
+            "URL": "http://www.iqtree.org/doc/Substitution-Models",
+            "author": [
+                {
+                    "family": "IQ-TREE"
+                }
+            ],
+            "id": "iq-tree2024a",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        5,
+                        14
+                    ]
+                ]
+            },
+            "title": "Substitution models: DNA models",
+            "title-short": "Substitution models",
+            "type": ""
+        },
+        {
+            "DOI": "10.1016/B978-1-4832-3211-9.50009-7",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/B9781483232119500097",
+            "author": [
+                {
+                    "family": "Jukes",
+                    "given": "Thomas H."
+                },
+                {
+                    "family": "Cantor",
+                    "given": "Charles R."
+                }
+            ],
+            "id": "jukes1969",
+            "issued": {
+                "date-parts": [
+                    [
+                        1969
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "DOI: 10.1016/B978-1-4832-3211-9.50009-7",
+            "page": "21-132",
+            "publisher": "Elsevier",
+            "title": "Evolution of Protein Molecules",
+            "type": "chapter"
+        }
+    ],
+    "project_biblios": []
+}
