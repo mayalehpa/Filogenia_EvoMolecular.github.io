@@ -2,105 +2,105 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "",
     "text": "Este taller busca generar un flujo de trabajo reproducible y extensible para alinear secuencias y definir el mejor esquema de partición y sus modelos asociados.\n\nLos archivos resultante de los análisis pueden ser visualizados y descargados en el siguiente repositorio, así como el scrip de Quarto: Repositorio Filogenia_EvoMolecular\nCada Rutina cuenta con la interpretación de resultados."
   },
   {
     "objectID": "index.html#primer-ajuste-párametros-predeterminados",
     "href": "index.html#primer-ajuste-párametros-predeterminados",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "1.1 Primer ajuste: Párametros predeterminados",
     "text": "1.1 Primer ajuste: Párametros predeterminados\n\nEn tu terminal ve al directorio donde se alejan los archivos .fasta\nVe a tu terminal de WSL y ejecuta el siguiente código:\n\n#COI\nmafft --auto coi.fasta &gt; coi.aln.fasta\n\n#16s\nmafft --auto 16s.fasta &gt; 16s.aln.fasta"
   },
   {
     "objectID": "index.html#segundo-ajuste-párametros-modificados",
     "href": "index.html#segundo-ajuste-párametros-modificados",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "1.2 Segundo ajuste: Párametros modificados",
     "text": "1.2 Segundo ajuste: Párametros modificados\n–maxiterate 1000: establece el número máximo de iteraciones en 1000\n–localpair: secuencias por debajo de 200\n–Gap open penalty: de 1.53\n\nPara los párametros modificados usaré maxiterate 1000, localpair y un GAP de 1.53\n\nmafft --maxiterate 1000 --localpair --op 1.53 coi.fasta &gt; coi_custom.aln.fasta\n\nmafft --maxiterate 1000 --localpair --op 1.53 16s.fasta &gt; 16s_custom.aln.fasta"
   },
   {
     "objectID": "index.html#interpretación-de-los-resultados",
     "href": "index.html#interpretación-de-los-resultados",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "1.3 Interpretación de los resultados",
     "text": "1.3 Interpretación de los resultados\nPara comparar las alineaciones, puedes usar herramientas como diff para ver las diferencias entre los archivos de alineación:\n#COI\ndiff coi.aln.fasta coi_custom.aln.fasta &gt; coi_diff.txt\n\n#16s\ndiff 16s.aln.fasta 16s_custom.aln.fasta &gt; 16s_diff.txt\nPara mostrar las diferencias ejecuta el siguiente comando\ncat coi_diff.txt\n\ncat 16s_diff.txt\nAl comparar los archivos generados tras ambos alineamientos de secuencias, observé que tenían el mismo contenido y un tamaño de 0 KB, lo que indica la ausencia de diferencias. Esto podría deberse a que el archivo coi.fasta no contiene suficiente variabilidad entre las secuencias, limitando el impacto de los parámetros personalizados. Esto ocurrio tanto para el análisis con COI y 16s."
   },
   {
     "objectID": "index.html#alineamientos-múltiples",
     "href": "index.html#alineamientos-múltiples",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "1.4 Alineamientos Múltiples",
     "text": "1.4 Alineamientos Múltiples\nPara evitar alinear cada archivo individualmente, podemos usar una línea de comando que alinee automáticamente múltiples regiones ubicadas en una misma carpeta.\n\n1.4.1 Creación de la carpeta\n\nCrea un nuevo directorio: vamos a crear un directorio dentro de la carpeta fasta_files para almacenar los outputs alineados. En este caso se llamara “Aline_multiples”.\n\nmkdir -p Aline_multiples\n\n\n1.4.2 Código para alineamiento múltiple\n\nEjecuta el siguiente código para alineamiento múltiple, recuerda estar ubicado en la carpeta “fasta_files”, alineara todos los archivos que se encuentren dentro de la carpeta con .fasta\n\nfor file in *.fasta; do\n  base_name=\"${file%.fasta}\"\n  mafft --auto \"$file\" &gt; \"Aline_multiples/${base_name}.aln.fasta\"\ndone\nNota: la linea de mafft se pueden usar con párametros ajustados."
   },
   {
     "objectID": "index.html#ejecutar-modelfinder-para-seleccionar-el-mejor-modelo",
     "href": "index.html#ejecutar-modelfinder-para-seleccionar-el-mejor-modelo",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "2.1 Ejecutar ModelFinder para seleccionar el mejor modelo",
     "text": "2.1 Ejecutar ModelFinder para seleccionar el mejor modelo\n\nCrear una carpeta para guardar los resultados\n\nmkdir -p Resultados_iqtree_modelfinder\n\n2.1.1 coi.aln.fasta\nEl siguiente comando ejecutará IQ-TREE usando Model Finder para determinar el mejor modelo.\niqtree2 -s coi.aln.fasta -m MF -redo -pre Coi_iqtree_modelfinder\niqtree2 Es como se llama a la última versión de Iqtree.\n-redo Esta opción indica a IQ-TREE que reemplace cualquier resultado anterior si ya existe un archivo de salida con el mismo nombre.\nMFP Si agregamos P a MF + Indicar el Bootstrap sería para crear un árbol, en este caso solo queremos observar la selección del mejor modelo.\n\n\n2.1.2 16s.aln.fasta\niqtree2 -s 16s.aln.fasta -m MF -redo -pre 16s_iqtree_modelfinder"
   },
   {
     "objectID": "index.html#mostrar-el-mejor-modelo",
     "href": "index.html#mostrar-el-mejor-modelo",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "2.2 Mostrar el mejor modelo",
     "text": "2.2 Mostrar el mejor modelo\n\n2.2.1 coi.aln.fasta\nCon la siguiente línea de comando podemos observar cual fue el mejor modelo:\ngrep \"Best-fit model\" Coi_iqtree_modelfinder.iqtree\n\n\n2.2.2 16s.aln.fasta\ngrep \"Best-fit model\" 16s_iqtree_modelfinder.iqtree"
   },
   {
     "objectID": "index.html#análisis-de-los-resultados",
     "href": "index.html#análisis-de-los-resultados",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "2.3 Análisis de los Resultados",
     "text": "2.3 Análisis de los Resultados\n\nEl análisis del gen COI con ModelFinder seleccionó el modelo HKY+F+G4 como el más adecuado según el criterio de información bayesiano (BIC). El modelo HKY es un modelo de sustitución de nucleótidos que permite diferentes tasas de transición y transversión y considera las frecuencias de las bases (Hasegawa et al., 1985). Es una extensión del modelo Kimura 2-parameter (K80). Este modelo es útil para la evolución de secuencias de ADN donde las transiciones son más frecuentes que las transversiones (Lemey et al., 2009).\nEl análisis del gen 16S con ModelFinder seleccionó el modelo TIM2+F+G4 como el más adecuado según el criterio de información bayesiano (BIC). Este modelo utiliza la matriz TIM2 (Transitional model 2), que permite diferentes tasas de sustitución entre transiciones y transversiones(IQ-TREE, 2024), lo cual es especialmente útil para genes como el 16S donde estas variaciones son comunes. La opción +F incorpora las frecuencias observadas de nucleótidos, mejorando así la precisión del modelo al considerar la composición real de bases en el alineamiento. Además, la inclusión de la corrección +G4 introduce heterogeneidad en las tasas de evolución a través de cuatro categorías gamma, permitiendo al modelo capturar variaciones en la velocidad de cambio entre diferentes sitios del gen 16S."
   },
   {
     "objectID": "index.html#instalaciones-necesarias",
     "href": "index.html#instalaciones-necesarias",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "3.1 Instalaciones necesarias",
     "text": "3.1 Instalaciones necesarias\n\n3.1.1 Instalación de Anaconda\nEn este caso descargare desde su página el instalador y lo ejecutare desde una terminal nativa de linux.\ncd Descargas\nbash ./Anaconda3-2024.06-1-Linux-x86_64.sh\nexport PATH=\"/home/may/anaconda/bin:$PATH\"\nmay hace referencia al usuario que tengo en linux, debes modificarlo de acuerdo a tu usuario.\n\n\n3.1.2 Crea un entorno en Anaconda para poder instalar Python 2.7.18\nEsto es un paso importante ya que nos ayudara a realizar el análisis con PartitionFinder.\nconda create -n py27 python=2.7.18\n\n## Activar el entorno\n\nconda activate py27\n\n## Verifica la versión de python\n\npython --version\n\n## Si quieres desactivar el entorno\n\nconda deactivate\npy27 hace referencia al nombre que le quise colocar al entorno\n\n\n3.1.3 Instala PartitionFinder\nAhora que estamos en el entorno de python 2.7.18, y con las librerias necesarias podremos instalar y ejecutar PartitionFinder para nuestro análisis.\n3.1 Descarga PartitionFinder en su página principal el archivo Source code (tar.gz)\n3.2 Al descomprimir, aloja la carpeta en bin (sino tienes la carpeta bin, la puedes crear)\n3.3 Ve a la terminal y ve hacia el directorio donde esta la carpeta\ncd ~/bin/partitionfinder-2.1.1"
   },
   {
     "objectID": "index.html#ejecuta-partitionfinder",
     "href": "index.html#ejecuta-partitionfinder",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "3.2 Ejecuta PartitionFinder",
     "text": "3.2 Ejecuta PartitionFinder\nDespués de estar en la carpeta de partitionfinder-2.1.1, ejecuta la siguiente linea de comando:\nphyton PartitionFinder.phy\n\n3.2.1 Configuración del archivo .cfg\n\nPara poder hacer el análisis de selección de modelo primero debemos configurar el archivo .cfg\nConfigurar el archivo partition_finder.cfg:\n\nvim partition_finder.cfg\nEl comando anterior es para crear el archivo de configuración con el editor vim, procederemos a ingresar la siguiente información: (las opciones se modifican de acuerdo a nuestros datos)\nImportante: Los archivos que admite PartitionFinder es .nex o .phy. En nuestro caso usaremos .phy\n## Ejemplo con el archivo 16s_iqtree_modelfinder.uniqueseq.phy\n\n## ALIGNMENT FILE ##\nalignment = 16s_iqtree_modelfinder.uniqueseq.phy;\n\n## BRANCHLENGTHS: linked | unlinked ##\nbranchlengths = linked;\n\n## MODELS OF EVOLUTION: all | allx | mrbayes | beast | gamma | gammai | &lt;list&gt; ##\nmodels = all;\n\n# MODEL SELECCTION: AIC | AICc | BIC #\nmodel_selection = BIC;\n\n## DATA BLOCKS: see manual for how to define ##\n[data_blocks]\nall = 1-905;\n\n## SCHEMES, search: all | user | greedy | rcluster | rclusterf | kmeans ##\n[schemes]\nsearch = all;\nPara profundizar sobre la ejecución y análisis en PartitionFinder puedes ver el tutorial en la página principal.\n\n\n3.2.2 Selección del modelo\nPara realizar el análisis debemos tener el archivo .phy y el archivo .cfg en la misma carpeta que el ejecutable (PartitionFinder.py). Luego ejecuta el siguiente código:\nNOTA: El programa solo reconoce un archivo de configuración bajo el nombre de “partition_finder.cfg”. Por ello debemos configurarlo para cada archivo de .phy (ver punto 3.2.1 Configuración del archivo .cfg)\npython PartitionFinder.py partition_finder.cfg\nPara visualizar los resultados después de este análisis en la carpeta analysis se guarda un archivo .txt llamado best_scheme. Para poder guardar el resultado podemos renombrarlo, así no se va a sobreescribir.\n\nComando para renombrar el archivo\nmv best_scheme.txt best_scheme_coi.txt\n\nLuego modificaremos el archivo de configuración para 16s y ejecutaremos el primer código. Posteriormente renombramos el archivo .txt para no confundirnos.\nEn caso de estar presentando dificultades con la obtención de resultados podemos usar el siguiente comando para forzar.\n\npython PartitionFinder.py partition_finder.cfg --force-restart"
   },
   {
     "objectID": "index.html#análisis-de-resultados",
     "href": "index.html#análisis-de-resultados",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "3.3 Análisis de Resultados",
     "text": "3.3 Análisis de Resultados\n\n3.3.1 Resultados para COI\nEl análisis con PartitionFinder muestra que el modelo seleccionado fue HKY+G (Hasegawa et al., 1985; IQ-TREE, 2024). La selección del modelo se basó en el criterio de información bayesiano (BIC), que arrojó un valor de 4944.97, indicando una buena adecuación del modelo en relación con el número de parámetros (100).\n\n\n3.3.2 Resultados para 16S\nEl análisis con PartitionFinder muestra que el modelo seleccionado fue GTR+G. Abarcando un total de 905 sitios con 88 parámetros."
   },
   {
     "objectID": "index.html#mixturefinder",
     "href": "index.html#mixturefinder",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "4.1 MixtureFinder",
     "text": "4.1 MixtureFinder\nPara crear la rutina utilizando Mixture Models, usaremos la herramienta MixtureFinder 1 que se encuentra en Iqtree2 para saber que modelos podemos usar (Ren et al., n.d.).\n\nEs importante que los archivos estén en formato FASTA o PHYLIP.\nCrea una nueva carpeta para guardar los resultados, recuerda agregar los archivos alineados FASTA o PHYLIP.\n\nmkdir -p MixtureFinder_analysis \n\nEjecuta el comando\n\n#16s\niqtree2 -s 16s_iqtree_modelfinder.uniqueseq.phy -m MIX+MF \n\n#COI\niqtree2 -s Coi_iqtree_modelfinder.uniqueseq.phy -m MIX+MF \n\nComando para saber cuál fue el mejor modelo\n\nEntre todos los documentos generados al correr el análisis encontramos el archivo .log, el cual contiene los resultados y podremos observar el “Best-fit model”. Pero empleando el siguiente comando en la terminal podremos obtenerlo de forma rápida:\n#16s\ncat 16s_iqtree_modelfinder.uniqueseq.phy.log | grep \"Best-fit model:\" \n\n#COI\ncat Coi_iqtree_modelfinder.uniqueseq.phy.log | grep \"Best-fit model:\" \nEn este caso el mejor modelo de mezcla encontrado por el programa para 16s usando BIC fue: MIX{TIM2+FO,JC+FO}+G4\n\nDos modelos de sustitución (TIM2+FO y JC+FO).\nGamma rate heterogeneity con cuatro categorías (+G4)\n\nPara COI el mejor modelo de mezcla encontra usando BIC fue: MIX{HKY+FO,JC+FO}+G4"
   },
   {
     "objectID": "index.html#analizando-el-mejor-modelo-escogido-por-mixturefinder",
     "href": "index.html#analizando-el-mejor-modelo-escogido-por-mixturefinder",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "4.2 Analizando el mejor modelo escogido por MixtureFinder",
     "text": "4.2 Analizando el mejor modelo escogido por MixtureFinder\nAhora vamos a realizar el análisis con el modelo seleccionado en MixtureFinder\n\nEjecuta el siguiente comando:\n\n#16s\niqtree2 -s 16s_iqtree_modelfinder.uniqueseq.phy -m \"MIX{TIM2+FO,JC+FO}+G4\" -redo\n\n#COI\niqtree2 -s Coi_iqtree_modelfinder.uniqueseq.phy -m \"MIX{HKY+FO,JC+FO}+G4\" -redo\nredo Me permite sobreescribir en el archivo que ya se habia generado del análisis anterior"
   },
   {
     "objectID": "index.html#análisis-de-resultados-1",
     "href": "index.html#análisis-de-resultados-1",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "4.3 Análisis de resultados",
     "text": "4.3 Análisis de resultados\nPara la estimación de modelos usando Mixture Models en IQ-TREE, utilicé MixtureFinder, que evaluó diferentes modelos de sustitución para encontrar el ajuste óptimo según el criterio BIC. El análisis concluyó que el mejor modelo fue MIX{TIM2+FO,JC+FO}+G4 para el alineamiento de 16s. Este modelo combina los modelos de sustitución TIM2+FO y JC+FO, además de incorporar la heterogeneidad de tasas de evolución entre sitios con el modelo Gamma (+G4), el cual permite cuatro categorías de tasas. La selección de este modelo mixto indica que, en lugar de asignar un solo modelo a todos los sitios de la secuencia, se permite que diferentes sitios tengan probabilidades de pertenecer a distintas categorías de modelos de sustitución, lo que mejora la precisión de la inferencia al reflejar la variabilidad evolutiva en el conjunto de datos. Esta flexibilidad es esencial en análisis complejos, ya que incrementa la capacidad del modelo para capturar patrones evolutivos específicos, haciendo que el árbol resultante sea más robusto y adecuado para las características observadas en las secuencias.\nEl análisis del gen COI utilizando MixtureFinder identificó el modelo óptimo como MIX{HKY+FO, JC+FO} + G4. Este modelo es un modelo mixto que emplea dos componentes de sustitución, HKY+FO (un modelo que considera frecuencias observadas de bases y diferentes tasas de transición y transversión) y JC+FO (modelo de Jukes-Cantor con frecuencias observadas) (Jukes & Cantor, 1969), además de una corrección de heterogeneidad de tasas de evolución gamma en cuatro categorías (+G4). La combinación de estos componentes permite que cada sitio en la secuencia tenga una probabilidad asignada de pertenecer a uno de los dos modelos de sustitución, lo cual refleja adecuadamente la variabilidad evolutiva en el gen COI."
   },
   {
     "objectID": "index.html#footnotes",
     "href": "index.html#footnotes",
-    "title": "Filogenia_EvoMolecular.github.io",
+    "title": "Taller 1: Filogenia y Evolución Molecular",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nMixtureFinder: Es una herramienta específica disponible en IQ-TREE (a partir de la versión 2.3.1) que ayuda a seleccionar el número óptimo de clases y el modelo de sustitución para cada clase dentro de un modelo de mezcla. MixtureFinder automatiza el proceso de selección de estos modelos de mezcla, ajustando el número de clases y evaluando el mejor modelo en función de criterios como BIC, AIC o pruebas de verosimilitud.↩︎"
   },

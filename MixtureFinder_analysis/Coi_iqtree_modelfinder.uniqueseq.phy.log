@@ -1,0 +1,357 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Oct 17 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MayWindows (AVX2, FMA3, 3 GB RAM)
+Command: iqtree2 -s Coi_iqtree_modelfinder.uniqueseq.phy -m MIX+MF
+Seed:    305541 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Oct 27 07:44:04 2024
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Coi_iqtree_modelfinder.uniqueseq.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 49 sequences with 696 columns, 196 distinct patterns
+160 parsimony-informative, 15 singleton sites, 521 constant sites
+                                           Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.5046e-05 secs
+   1  Pristimantis_aff_viejas_MHUAA5555            9.48%    passed     99.89%
+   2  Pristimantis_aff_viejas_MHUAA5562            0.57%    passed     98.00%
+   3  Pristimantis_aff_viejas_MHUAA8059           10.63%    passed     98.14%
+   4  Pristimantis_aff_viejas_MHUAA8087           12.36%    passed     92.97%
+   5  Pristimantis_aff_viejas_MHUAA8088           11.93%    passed     92.15%
+   6  Pristimantis_aff_viejas_MHUAA8089           10.92%    passed     97.27%
+   7  Pristimantis_aff_viejas_MHUAA8099           10.78%    passed     98.96%
+   8  Pristimantis_aff_viejas_MHUAA8810            9.91%    passed     99.15%
+   9  Pristimantis_aff_viejas_MHUAA9428            7.04%    passed     98.73%
+  10  Pristimantis_aff_viejas_MHUAA10473           7.04%    passed     99.67%
+  11  Pristimantis_aff_viejas_MHUAA10477           6.90%    passed     99.60%
+  12  Pristimantis_aff_viejas_MHUAA10489           7.76%    passed     99.57%
+  13  Pristimantis_aff_viejas_MHUAA10508           6.90%    passed     99.85%
+  14  Pristimantis_aff_viejas_MHUAA10514           7.47%    passed     99.47%
+  15  Pristimantis_aff_viejas_MHUAA10524           6.90%    passed     99.85%
+  16  Pristimantis_aff_viejas_MHUAA10814           7.61%    passed     99.89%
+  17  Pristimantis_aff_viejas_MHUAA11731          24.14%    passed     94.71%
+  18  Pristimantis_aff_viejas_MHUAA11733           6.03%    passed     93.14%
+  19  Pristimantis_aff_viejas_MHUAA11734          24.14%    passed     94.71%
+  20  Pristimantis_aff_viejas_MHUAA11737          24.43%    passed     95.23%
+  21  Pristimantis_aff_viejas_MHUAA11913           9.48%    passed     99.90%
+  22  Pristimantis_aff_viejas_MHUAA11914           9.48%    passed     99.90%
+  23  Pristimantis_factiosus_ARU784               17.96%    passed     74.54%
+  24  Pristimantis_factiosus_MHUAA8075            10.49%    passed     97.41%
+  25  Pristimantis_factiosus_MHUAA8080             8.76%    passed     91.82%
+  26  Pristimantis_factiosus_MHUAA8093             7.61%    passed     90.68%
+  27  Pristimantis_factiosus_MHUAA8808            15.52%    passed     86.26%
+  28  Pristimantis_factiosus_MHUAA10366            6.75%    passed     96.44%
+  29  Pristimantis_factiosus_MHUAA10367            7.33%    passed     95.64%
+  30  Pristimantis_factiosus_MHUAA10368            6.75%    passed     95.24%
+  31  Pristimantis_factiosus_MHUAA10369            6.90%    passed     95.31%
+  32  Pristimantis_factiosus_MHUAA11730           31.32%    passed     76.94%
+  33  Pristimantis_factiosus_MHUAA11732            6.03%    passed     69.24%
+  34  Pristimantis_factiosus_MHUAA11735           31.32%    passed     76.94%
+  35  Pristimantis_factiosus_MHUAA11736           31.32%    passed     80.15%
+  36  Pristimantis_factiosus_MHUAA11915            9.34%    passed     91.31%
+  37  Pristimantis_viejas_MHUAA6597___reversed_   10.63%    passed     99.19%
+  38  Pristimantis_viejas_MHUAA7119                8.91%    passed     97.46%
+  39  Pristimantis_viejas_MHUAA9742                9.48%    passed     98.30%
+  40  Pristimantis_viejas_MHUAA10465               8.62%    passed     97.94%
+  41  Pristimantis_viejas_MHUAA10475               7.61%    passed     99.49%
+  42  Pristimantis_viejas_MHUAA10509               7.61%    passed     99.49%
+  43  Pristimantis_viejas_MHUAA10526               9.20%    passed     99.08%
+  44  Pristimantis_viejas_MHUAA10558               7.61%    passed     99.49%
+  45  Pristimantis_viejas_MHUAA11468               6.03%    passed     99.87%
+  46  Pristimantis_viejas_MHUAA11470               6.03%    passed     99.87%
+  47  Pristimantis_viejas_MHUAA11473               6.03%    passed     99.63%
+  48  Pristimantis_viejas_MHUAA11900               7.04%    passed     99.33%
+  49  Pristimantis_viejas_MHUAA11901               7.04%    passed     99.33%
+****  TOTAL                                       10.84%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Pristimantis_aff_viejas_MHUAA10524 is identical to Pristimantis_aff_viejas_MHUAA10508 but kept for subsequent analysis
+NOTE: Pristimantis_aff_viejas_MHUAA11734 is identical to Pristimantis_aff_viejas_MHUAA11731 but kept for subsequent analysis
+NOTE: Pristimantis_aff_viejas_MHUAA11914 is identical to Pristimantis_aff_viejas_MHUAA11913 but kept for subsequent analysis
+NOTE: Pristimantis_factiosus_MHUAA11735 is identical to Pristimantis_factiosus_MHUAA11730 but kept for subsequent analysis
+NOTE: Pristimantis_viejas_MHUAA10558 is identical to Pristimantis_viejas_MHUAA10509 but kept for subsequent analysis
+NOTE: Pristimantis_viejas_MHUAA11470 is identical to Pristimantis_viejas_MHUAA11468 but kept for subsequent analysis
+NOTE: Pristimantis_viejas_MHUAA11901 is identical to Pristimantis_viejas_MHUAA11900 but kept for subsequent analysis
+--------------------------------------------------------------------
+|                Optimizing Q-mixture model                        |
+--------------------------------------------------------------------
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -2140.997
+Optimal log-likelihood: -2140.801
+Rate parameters:  A-C: 10.68284  A-G: 99.54099  A-T: 7.60670  C-G: 5.76547  C-T: 87.48543  G-T: 1.00000
+Base frequencies:  A: 0.225  C: 0.295  G: 0.170  T: 0.310
+Proportion of invariable sites: 0.363
+Gamma shape alpha: 0.433
+Parameters optimization took 1 rounds (0.021 sec)
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 0.212 seconds
+
+NOTE: ModelFinder requires 3 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 696 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+FO        2211.941     103 4629.882     4666.071     5098.053
+  2  GTR+FO+I      2143.354     104 4494.709     4531.663     4967.425
+  3  GTR+FO+G4     2141.353     104 4490.706     4527.660     4963.422
+  4  GTR+FO+I+G4   2140.323     105 4490.646     4528.374     4967.907
+  5  GTR+FO+R2     2142.963     105 4495.927     4533.656     4973.189
+  6  GTR+FO+R3     2140.180     107 4494.360     4533.666     4980.712
+ 14  GTR+FO+I+R2   2143.101     106 4498.202     4536.715     4980.010
+ 15  GTR+FO+I+R3   2140.455     108 4496.910     4537.019     4987.808
+ 24  SYM+I         2165.391     101 4532.782     4567.469     4991.862
+ 25  SYM+G4        2162.518     101 4527.035     4561.722     4986.116
+ 26  SYM+I+G4      2161.028     102 4526.055     4561.488     4989.681
+ 27  SYM+R2        2160.770     102 4525.540     4560.973     4989.166
+ 46  TVM+FO+I      2144.430     103 4494.859     4531.048     4963.030
+ 47  TVM+FO+G4     2141.737     103 4489.474     4525.663     4957.645
+ 48  TVM+FO+I+G4   2140.455     104 4488.909     4525.863     4961.625
+ 49  TVM+FO+R2     2140.301     104 4488.602     4525.556     4961.318
+ 68  TVMe+I        2166.720     100 4533.440     4567.390     4987.975
+ 69  TVMe+G4       2164.183     100 4528.365     4562.315     4982.900
+ 70  TVMe+I+G4     2163.033     101 4528.067     4562.754     4987.147
+ 71  TVMe+R2       2162.527     101 4527.054     4561.741     4986.134
+ 90  TIM3+FO+I     2144.241     102 4492.482     4527.915     4956.108
+ 91  TIM3+FO+G4    2142.679     102 4489.358     4524.792     4952.984
+ 92  TIM3+FO+I+G4  2142.050     103 4490.101     4526.290     4958.272
+ 93  TIM3+FO+R2    2142.223     103 4490.446     4526.635     4958.617
+112  TIM3e+I       2169.263     99  4536.525     4569.747     4986.515
+113  TIM3e+G4      2166.567     99  4531.133     4564.355     4981.123
+114  TIM3e+I+G4    2165.206     100 4530.411     4564.361     4984.946
+115  TIM3e+R2      2165.023     100 4530.047     4563.996     4984.582
+134  TIM2+FO+I     2144.591     102 4493.183     4528.616     4956.808
+135  TIM2+FO+G4    2142.627     102 4489.253     4524.687     4952.879
+136  TIM2+FO+I+G4  2141.522     103 4489.044     4525.233     4957.215
+137  TIM2+FO+R2    2141.328     103 4488.656     4524.846     4956.828
+156  TIM2e+I       2166.701     99  4531.401     4564.623     4981.391
+157  TIM2e+G4      2163.694     99  4525.387     4558.609     4975.377
+158  TIM2e+I+G4    2162.035     100 4524.069     4558.019     4978.604
+159  TIM2e+R2      2161.528     100 4523.057     4557.006     4977.592
+178  TIM+FO+I      2145.165     102 4494.329     4529.763     4957.955
+179  TIM+FO+G4     2143.634     102 4491.267     4526.701     4954.893
+180  TIM+FO+I+G4   2142.946     103 4491.891     4528.080     4960.062
+181  TIM+FO+R2     2143.109     103 4492.218     4528.407     4960.389
+200  TIMe+I        2170.106     99  4538.212     4571.434     4988.202
+201  TIMe+G4       2167.384     99  4532.768     4565.990     4982.758
+202  TIMe+I+G4     2165.965     100 4531.930     4565.880     4986.465
+203  TIMe+R2       2165.732     100 4531.463     4565.413     4985.998
+222  TPM3u+FO+I    2145.763     101 4493.525     4528.212     4952.606
+223  TPM3u+FO+G4   2143.250     101 4488.500     4523.186     4947.580
+224  TPM3u+FO+I+G4 2142.228     102 4488.455     4523.889     4952.081
+225  TPM3u+FO+R2   2142.315     102 4488.630     4524.063     4952.256
+244  TPM3+I        2170.270     98  4536.539     4569.042     4981.984
+245  TPM3+G4       2168.139     98  4532.278     4564.780     4977.722
+246  TPM3+I+G4     2167.296     99  4532.591     4565.813     4982.581
+247  TPM3+R2       2167.076     99  4532.151     4565.373     4982.141
+266  TPM2u+FO+I    2145.774     101 4493.549     4528.235     4952.629
+267  TPM2u+FO+G4   2143.055     101 4488.110     4522.797     4947.191
+268  TPM2u+FO+I+G4 2141.664     102 4487.329     4522.762     4950.954
+269  TPM2u+FO+R2   2141.436     102 4486.873     4522.306     4950.499
+288  TPM2+I        2167.954     98  4531.908     4564.411     4977.353
+289  TPM2+G4       2165.310     98  4526.620     4559.122     4972.064
+290  TPM2+I+G4     2164.002     99  4526.004     4559.225     4975.993
+291  TPM2+R2       2163.312     99  4524.625     4557.846     4974.614
+310  K3Pu+FO+I     2146.742     101 4495.485     4530.171     4954.565
+311  K3Pu+FO+G4    2144.231     101 4490.461     4525.148     4949.541
+312  K3Pu+FO+I+G4  2143.140     102 4490.280     4525.714     4953.906
+313  K3Pu+FO+R2    2143.254     102 4490.508     4525.942     4954.134
+332  K3P+I         2171.106     98  4538.211     4570.714     4983.656
+333  K3P+G4        2168.949     98  4533.897     4566.400     4979.341
+334  K3P+I+G4      2168.047     99  4534.094     4567.316     4984.084
+335  K3P+R2        2167.812     99  4533.624     4566.845     4983.613
+354  TN+FO+I       2145.192     101 4492.385     4527.072     4951.465
+355  TN+FO+G4      2143.643     101 4489.287     4523.973     4948.367
+356  TN+FO+I+G4    2142.956     102 4489.912     4525.345     4953.538
+357  TN+FO+R2      2143.066     102 4490.132     4525.565     4953.758
+376  TNe+I         2170.119     98  4536.238     4568.741     4981.682
+377  TNe+G4        2167.398     98  4530.795     4563.298     4976.240
+378  TNe+I+G4      2165.977     99  4529.953     4563.175     4979.943
+379  TNe+R2        2165.749     99  4529.497     4562.719     4979.487
+398  HKY+FO+I      2146.750     100 4493.500     4527.449     4948.034
+399  HKY+FO+G4     2144.236     100 4488.472     4522.421     4943.007
+400  HKY+FO+I+G4   2143.147     101 4488.294     4522.981     4947.374
+401  HKY+FO+R2     2143.175     101 4488.351     4523.037     4947.431
+420  K2P+I         2171.116     97  4536.233     4568.025     4977.131
+421  K2P+G4        2168.955     97  4531.909     4563.702     4972.808
+422  K2P+I+G4      2168.055     98  4532.110     4564.613     4977.555
+423  K2P+R2        2167.813     98  4531.626     4564.129     4977.071
+442  F81+FO+I      2289.612     99  4777.225     4810.446     5227.214
+443  F81+FO+G4     2288.889     99  4775.778     4808.999     5225.767
+444  F81+FO+I+G4   2289.088     100 4778.177     4812.126     5232.712
+445  F81+FO+R2     2289.071     100 4778.142     4812.092     5232.677
+464  JC+I          2322.663     96  4837.326     4868.418     5273.680
+465  JC+G4         2321.733     96  4835.466     4866.557     5271.819
+466  JC+I+G4       2321.706     97  4837.412     4869.204     5278.311
+467  JC+R2         2321.756     97  4837.512     4869.304     5278.411
+Akaike Information Criterion:           TPM2u+FO+R2
+Corrected Akaike Information Criterion: TPM2u+FO+R2
+Bayesian Information Criterion:         HKY+FO+G4
+Best-fit model: HKY+FO+G4 chosen according to BIC
+
+All model information printed to Coi_iqtree_modelfinder.uniqueseq.phy.model.gz
+CPU time for ModelFinder: 2.703 seconds (0h:0m:2s)
+Wall-clock time for ModelFinder: 3.097 seconds (0h:0m:3s)
+
+NOTE: 1 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2288.981
+2. Current log-likelihood: -2149.877
+3. Current log-likelihood: -2144.517
+4. Current log-likelihood: -2144.272
+Optimal log-likelihood: -2144.242
+Rate parameters:  A-C: 1.00000  A-G: 14.34688  A-T: 1.00000  C-G: 1.00000  C-T: 14.34688  G-T: 1.00000
+Base frequencies:  A: 0.243  C: 0.288  G: 0.161  T: 0.307
+Gamma shape alpha: 0.173
+Parameters optimization took 4 rounds (0.082 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.00954742 secs using 92.23% CPU
+Computing ML distances took 0.032071 sec (of wall-clock time) 0.009046 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 7.1671e-05 secs using 90.69% CPU
+Computing RapidNJ tree took 0.000585 sec (of wall-clock time) 0.000307 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2151.660
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.090 second
+Computing log-likelihood of 98 initial trees ... 0.131 seconds
+Current best score: -2144.242
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -2144.238
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -2144.217
+BETTER TREE FOUND at iteration 3: -2144.216
+BETTER TREE FOUND at iteration 5: -2144.216
+BETTER TREE FOUND at iteration 6: -2144.216
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 7: -2144.092
+Iteration 10 / LogL: -2144.219 / Time: 0h:0m:3s
+Iteration 20 / LogL: -2144.219 / Time: 0h:0m:4s
+Finish initializing candidate tree set (20)
+Current best tree score: -2144.092 / CPU time: 0.850
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -2144.098 / Time: 0h:0m:4s (0h:0m:4s left)
+Iteration 40 / LogL: -2144.100 / Time: 0h:0m:5s (0h:0m:3s left)
+Iteration 50 / LogL: -2144.100 / Time: 0h:0m:5s (0h:0m:2s left)
+Iteration 60 / LogL: -2144.223 / Time: 0h:0m:6s (0h:0m:2s left)
+Iteration 70 / LogL: -2144.097 / Time: 0h:0m:6s (0h:0m:1s left)
+Iteration 80 / LogL: -2159.993 / Time: 0h:0m:7s (0h:0m:1s left)
+Iteration 90 / LogL: -2144.102 / Time: 0h:0m:7s (0h:0m:0s left)
+Iteration 100 / LogL: -2144.302 / Time: 0h:0m:7s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 108 ITERATIONS / Time: 0h:0m:8s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2144.092
+Optimal log-likelihood: -2144.092
+Rate parameters:  A-C: 1.00000  A-G: 14.69463  A-T: 1.00000  C-G: 1.00000  C-T: 14.69463  G-T: 1.00000
+Base frequencies:  A: 0.244  C: 0.288  G: 0.161  T: 0.307
+Gamma shape alpha: 0.171
+Parameters optimization took 1 rounds (0.013 sec)
+BEST SCORE FOUND : -2144.092
+Total tree length: 0.737
+
+Total number of iterations: 108
+CPU time used for tree search: 4.336 sec (0h:0m:4s)
+Wall-clock time used for tree search: 4.868 sec (0h:0m:4s)
+Total CPU time used: 7.153 sec (0h:0m:7s)
+Total wall-clock time used: 8.278 sec (0h:0m:8s)
+
+Model: HKY+FO+G4; df: 100; loglike: -2144.092; BIC score: 4942.718
+
+Keep adding an additional class until the p-value from the likelihood ratio test > 0.050
+
+NOTE: Restoring information from model checkpoint file Coi_iqtree_modelfinder.uniqueseq.phy.model.gz
+NOTE: ModelFinder requires 1 MB RAM!
+ModelFinder will test up to 22 DNA models (sample size: 696 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  MIX{HKY+FO,GTR+FO}+G4 2139.988     109 4497.976     4538.898     4993.419
+  2  MIX{HKY+FO,SYM+FO}+G4 2140.407     106 4492.814     4531.327     4974.621
+  3  MIX{HKY+FO,TVM+FO}+G4 2139.846     108 4495.693     4535.802     4986.590
+  4  MIX{HKY+FO,TVMe+FO}+G4 2140.684     105 4491.368     4529.097     4968.630
+  5  MIX{HKY+FO,TIM3+FO}+G4 2139.012     107 4492.025     4531.331     4978.377
+  6  MIX{HKY+FO,TIM3e+FO}+G4 2139.333     104 4486.667     4523.621     4959.383
+  7  MIX{HKY+FO,TIM2+FO}+G4 2140.374     107 4494.748     4534.054     4981.100
+  8  MIX{HKY+FO,TIM2e+FO}+G4 2140.369     104 4488.737     4525.691     4961.454
+  9  MIX{HKY+FO,TIM+FO}+G4 2140.117     107 4494.234     4533.540     4980.586
+ 10  MIX{HKY+FO,TIMe+FO}+G4 2140.305     104 4488.609     4525.564     4961.326
+ 11  MIX{HKY+FO,TPM3u+FO}+G4 2139.132     106 4490.263     4528.776     4972.070
+ 12  MIX{HKY+FO,TPM3+FO}+G4 2139.591     103 4485.182     4521.371     4953.353
+ 13  MIX{HKY+FO,TPM2u+FO}+G4 2140.355     106 4492.710     4531.223     4974.517
+ 14  MIX{HKY+FO,TPM2+FO}+G4 2141.089     103 4488.179     4524.368     4956.350
+ 15  MIX{HKY+FO,K81u+FO}+G4 2140.329     106 4492.659     4531.172     4974.466
+ 16  MIX{HKY+FO,K81+FO}+G4 2141.059     103 4488.118     4524.307     4956.289
+ 17  MIX{HKY+FO,TN+FO}+G4 2140.481     106 4492.963     4531.475     4974.770
+ 18  MIX{HKY+FO,TNe+FO}+G4 2140.363     103 4486.726     4522.915     4954.897
+ 19  MIX{HKY+FO,HKY+FO}+G4 2140.550     105 4491.100     4528.829     4968.362
+ 20  MIX{HKY+FO,K80+FO}+G4 2141.099     102 4486.197     4521.630     4949.823
+ 21  MIX{HKY+FO,F81+FO}+G4 2144.098     104 4496.197     4533.151     4968.913
+ 22  MIX{HKY+FO,JC+FO}+G4 2144.258     101 4490.516     4525.203     4949.597
+Best-fit model: MIX{HKY+FO,JC+FO}+G4 chosen according to BIC
+
+All model information printed to Coi_iqtree_modelfinder.uniqueseq.phy.model.gz
+CPU time for ModelFinder: 4.352 seconds (0h:0m:4s)
+Wall-clock time for ModelFinder: 4.855 seconds (0h:0m:4s)
+
+Model: MIX{HKY+FO,JC+FO}+G4; df: 101; loglike: -2144.258; BIC score: 4949.597; pvalue: 1.000; 
+
+NOTE: Restoring information from model checkpoint file Coi_iqtree_modelfinder.uniqueseq.phy.model.gz
+NOTE: ModelFinder requires 1 MB RAM!
+ModelFinder will test up to 22 DNA models (sample size: 696 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  HKY+FO        2219.011     99  4636.022     4669.243     5086.012
+  2  HKY+FO+I      2146.750     100 4493.500     4527.449     4948.034
+  3  HKY+FO+G4     2144.236     100 4488.472     4522.421     4943.007
+  4  HKY+FO+I+G4   2143.147     101 4488.294     4522.981     4947.374
+  5  HKY+FO+R2     2143.175     101 4488.351     4523.037     4947.431
+  6  HKY+FO+R3     2143.070     103 4492.141     4528.330     4960.312
+ 14  HKY+FO+I+R2   2143.384     102 4490.767     4526.200     4954.393
+ 15  HKY+FO+I+R3   2143.121     104 4494.241     4531.195     4966.957
+Best-fit model: HKY+FO+G4 chosen according to BIC
+
+All model information printed to Coi_iqtree_modelfinder.uniqueseq.phy.model.gz
+CPU time for ModelFinder: 0.262 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.380 seconds (0h:0m:0s)
+-------------------------------------------------------
+  Best-fit Q-Mixture model: HKY+FO+G4
+-------------------------------------------------------
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+
+NOTE: 1 MB RAM (0 GB) is required!
+CHECKPOINT: Model parameters restored, LogL: -2144.092
+Wrote distance file to... 
+BEST SCORE FOUND : -2144.092
+Total tree length: 0.737
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 11.770 sec (0h:0m:11s)
+Total wall-clock time used: 13.596 sec (0h:0m:13s)
+
+Analysis results written to: 
+  IQ-TREE report:                Coi_iqtree_modelfinder.uniqueseq.phy.iqtree
+  Maximum-likelihood tree:       Coi_iqtree_modelfinder.uniqueseq.phy.treefile
+  Screen log file:               Coi_iqtree_modelfinder.uniqueseq.phy.log
+
+Date and Time: Sun Oct 27 07:44:18 2024

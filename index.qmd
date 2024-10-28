@@ -1,5 +1,5 @@
 ---
-title: "Filogenia_EvoMolecular.github.io"
+title: "Taller 1: Filogenia y Evolución Molecular"
 author: "Mayra Herrera Pacheco"
 bibliography: references.bib
 csl: apa.csl

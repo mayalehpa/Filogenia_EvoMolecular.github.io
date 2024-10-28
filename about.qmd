@@ -2,8 +2,4 @@
 title: "About"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+Página creada para el primer taller del curso de Maestría de Filogenética y Evolución Molecular.
